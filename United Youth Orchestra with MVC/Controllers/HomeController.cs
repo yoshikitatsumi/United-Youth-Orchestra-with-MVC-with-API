@@ -23,11 +23,11 @@ namespace United_Youth_Orchestra_with_MVC.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Policy()
         {
             return View();
         }
-        public IActionResult Policy()
+        public IActionResult NextEventPage()
         {
             return View();
         }
