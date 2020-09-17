@@ -27,7 +27,7 @@ namespace United_Youth_Orchestra_with_MVC.Controllers
         {
             return View();
         }
-        public IActionResult NextEventPage()
+        public IActionResult NextEvent()
         {
             return View();
         }
