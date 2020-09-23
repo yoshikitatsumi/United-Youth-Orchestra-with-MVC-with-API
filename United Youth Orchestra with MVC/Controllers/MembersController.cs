@@ -11,6 +11,7 @@ using United_Youth_Orchestra_with_MVC.Models;
 
 namespace United_Youth_Orchestra_with_MVC.Controllers
 {
+    // Login only to view entire page
     [Authorize]
     public class MembersController : Controller
     {

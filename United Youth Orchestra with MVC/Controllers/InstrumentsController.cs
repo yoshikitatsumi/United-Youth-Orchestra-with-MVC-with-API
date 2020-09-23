@@ -11,7 +11,7 @@ using United_Youth_Orchestra_with_MVC.Models;
 
 namespace United_Youth_Orchestra_with_MVC.Controllers
 {
-    
+    // Everyone can see the page
     public class InstrumentsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -44,14 +44,14 @@ namespace United_Youth_Orchestra_with_MVC.Controllers
 
             return View(instrument);
         }
-
+        // Login is needed to create DB
         // GET: Instruments/Create
         [Authorize]
         public IActionResult Create()
         {
             return View();
         }
-
+        // Login is needed to create DB
         // POST: Instruments/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -68,7 +68,7 @@ namespace United_Youth_Orchestra_with_MVC.Controllers
             }
             return View(instrument);
         }
-
+        // Login is needed to edit DB
         // GET: Instruments/Edit/5
         [Authorize]
         public async Task<IActionResult> Edit(int? id)
@@ -85,7 +85,7 @@ namespace United_Youth_Orchestra_with_MVC.Controllers
             }
             return View(instrument);
         }
-
+        // Login is needed to edit DB
         // POST: Instruments/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -121,7 +121,7 @@ namespace United_Youth_Orchestra_with_MVC.Controllers
             }
             return View(instrument);
         }
-
+        // Login is needed to delete DB
         // GET: Instruments/Delete/5
         [Authorize]
         public async Task<IActionResult> Delete(int? id)
@@ -140,7 +140,7 @@ namespace United_Youth_Orchestra_with_MVC.Controllers
 
             return View(instrument);
         }
-
+        // Login is needed to delete DB
         // POST: Instruments/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
