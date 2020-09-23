@@ -52,6 +52,7 @@ namespace United_Youth_Orchestra_with_MVC.Controllers
         // GET: Members/Create
         public IActionResult Create()
         {
+            // showing music instrument name, not ID
             ViewData["InstFK"] = new SelectList(_context.Instrument, "Id", "MusicInst");
             ViewData["SYearFK"] = new SelectList(_context.Schoolyear, "Id", "Id");
             return View();
@@ -88,6 +89,7 @@ namespace United_Youth_Orchestra_with_MVC.Controllers
             {
                 return NotFound();
             }
+            // showing music instrument name, not ID
             ViewData["InstFK"] = new SelectList(_context.Instrument, "Id", "MusicInst", member.InstFK);
             ViewData["SYearFK"] = new SelectList(_context.Schoolyear, "Id", "Id", member.SYearFK);
             return View(member);

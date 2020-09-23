@@ -7,6 +7,7 @@ namespace United_Youth_Orchestra_with_MVC.Models
 {
     public class Schoolyear
     {
+        // ID, School year shoowing exact school year
         public int Id { get; set; }
         public bool Year6orEarlier { get; set; }
         public bool Year7 { get; set; }

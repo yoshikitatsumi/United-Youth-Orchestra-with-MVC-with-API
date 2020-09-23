@@ -10,6 +10,7 @@ namespace United_Youth_Orchestra_with_MVC.Models
 
     public class Member
     {
+        // ID, Name, Telephone, email, DOB, SchoolYear, Music Instrument 
         public int Id { get; set; }
         public string Name { get; set; }
         public int Telephone { get; set; } = 0;

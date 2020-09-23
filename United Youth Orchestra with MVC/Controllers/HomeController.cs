@@ -22,11 +22,12 @@ namespace United_Youth_Orchestra_with_MVC.Controllers
         {
             return View();
         }
-
+        // changed privacy to policy
         public IActionResult Policy()
         {
             return View();
         }
+        // adding NextEvent page
         public IActionResult NextEvent()
         {
             return View();

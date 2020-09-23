@@ -7,6 +7,7 @@ namespace United_Youth_Orchestra_with_MVC.Models
 {
     public class Instrument
     {
+        // ID and Music instrument
         public int Id { get; set; }
         public string MusicInst { get; set; }
     }
